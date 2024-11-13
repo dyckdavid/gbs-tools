@@ -6,16 +6,16 @@
 </script>
 
 <h1>Login/Register</h1>
-<form method='post' action='?/login' use:enhance>
-	<label>
+<form method='post' action='?/login' use:enhance class='flex flex-col gap-2'>
+	<label class='flex flex-col gap-2'>
 		Username
 		<input name='username' />
 	</label>
-	<label>
+	<label class='flex flex-col gap-2'>
 		Password
 		<input type='password' name='password' />
 	</label>
-	<button>Login</button>
-	<button formaction='?/register'>Register</button>
+	<button class='bg-blue-500 text-white p-2 rounded-md'>Login</button>
+	<button formaction='?/register' class='bg-green-500 text-white p-2 rounded-md'>Register</button>
 </form>
 <p style='color: red'>{form?.message ?? ''}</p>
