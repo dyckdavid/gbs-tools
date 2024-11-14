@@ -29,7 +29,7 @@ COPY package.json pnpm-lock.yaml ./
 COPY .npmrc .npmrc
 
 # Install node modules
-RUN pnpm install --frozen-lockfile --prod=false
+RUN pnpm install --prod=false
 
 # Copy application code
 COPY . .

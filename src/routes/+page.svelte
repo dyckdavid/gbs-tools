@@ -1,1 +1,1 @@
-<h1 class="text-3xl font-bold text-center">Welcome to GBS tools</h1>
+<h1 class="text-3xl font-bold text-center">Welcome to GBS</h1>

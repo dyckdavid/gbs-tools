@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for gbs-tools-wispy-wildflower-8437 on 2024-11-13T17:14:55-06:00
+# fly.toml app configuration file generated for gbs-tools on 2024-11-14T10:01:27-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'gbs-tools-wispy-wildflower-8437'
+app = 'gbs-tools'
 primary_region = 'lax'
 
 [build]

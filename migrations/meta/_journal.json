@@ -15,6 +15,20 @@
       "when": 1731521634732,
       "tag": "0001_illegal_salo",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1731598911969,
+      "tag": "0002_fuzzy_yellow_claw",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1731598981955,
+      "tag": "0003_volatile_thena",
+      "breakpoints": true
     }
   ]
 }
