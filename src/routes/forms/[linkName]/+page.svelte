@@ -13,6 +13,7 @@
   $: if (!form) {
     errorMessage = 'Form not found or not public.';
   }
+
 </script>
 
 <svelte:head>
@@ -26,7 +27,7 @@
 
   <h1 class="text-2xl font-bold mb-6 text-center">{form.title ?? 'Untitled Form'}</h1>
   <iframe
-    class="rounded-lg h-screen static pb-4"
+    class="absolute left-0 w-full h-full rounded-lg"
     src={form.googleFormEmbedLink ?? ''}
     width="100%"
     height="600"
