@@ -1,4 +1,5 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+import { sql } from 'drizzle-orm';
 
 export const user = sqliteTable('user', {
     id: text('id').primaryKey(),
@@ -13,8 +14,18 @@ export const session = sqliteTable("session", {
     expiresAt: integer('expires_at', { mode: 'timestamp' }).notNull()
 });
 
+export const forms = sqliteTable("forms", {
+    id: integer('id').primaryKey({ autoIncrement: true }),
+    title: text('title'),
+    googleFormEmbedLink: text('google_form_embed_link'),
+    linkName: text('link_name'),
+    createdAt: integer('created_at', { mode: 'timestamp' }).notNull(),
+    isPublic: integer('is_public').default(0),
+});
+
 
 
 export type Session = typeof session.$inferSelect;
 
 export type User = typeof user.$inferSelect;
+export type Form = typeof forms.$inferSelect;

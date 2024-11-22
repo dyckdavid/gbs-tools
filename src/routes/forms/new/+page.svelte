@@ -1,0 +1,1 @@
+<h1 class="text-3xl font-bold text-center">UPS wrong page!</h1>
