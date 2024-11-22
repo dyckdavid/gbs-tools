@@ -2,6 +2,12 @@
     import logo from "../lib/img/logo.svg";
 </script>
 
+<svelte:head>
+	<title>GBS</title>
+	<meta name="description" content="GBS" />
+	<link rel="manifest" href="/manifest.json">
+</svelte:head>
+
 <h1 class="text-3xl font-bold text-center">Welcome to GBS</h1>
 <img src={logo} alt="Logo" class="fixed-logo" />
 <style>

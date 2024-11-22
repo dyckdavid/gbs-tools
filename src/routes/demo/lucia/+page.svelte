@@ -12,7 +12,7 @@
 		message = '';
 		try {
 			const response = await fetch('/api/forms', {
-				method: 'Post',
+				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
 					title,
@@ -32,13 +32,14 @@
 			} else {
 				message = `Error: ${result.error}`;
 			}
-		} catch (error) {
-			message = `Error`;
+		} catch (error: unknown) {
+			message = `Error: ${error as Error }`;
 		}
 	}
 
 	let { data }: { data: PageServerData } = $props();
 </script>
+
 
 <h1 class='text-2xl font-bold p-2'>Hi, {data.user.username}!</h1>
 <p class='text-lg p-2'>Your user ID is {data.user.id}.</p>
